@@ -1,10 +1,10 @@
 # HD-Vector-Map
 # Introduction
 
-This contains a HDVM (high-definition vector map) generation pipeline designed for autonomous vehicles, especially in intricate urban environments. Traditional HDVM creation methods often operate on a planar assumption, causing inaccuracies in real-world scenarios. Our solution, however, integrates data from GNSS (global navigation satellite system), INS (inertial navigation system), LiDAR, and cameras.
+This presents a high-definition vector map (HDVM) generation pipeline tailored for autonomous vehicles, particularly in complex urban settings. Conventional HDVM methods often assume a planar surface, leading to inaccuracies in real-world applications. To overcome this, our approach integrates data from multiple sensors, including GNSS (Global Navigation Satellite System), INS (Inertial Navigation System), LiDAR, and cameras.
 
-The process starts with the extraction of semantic data from raw images using advanced architectures like Vision Transformer (ViT) and Swin Transformer. We then acquire the absolute 3D data of these semantic objects from 3D LiDAR depth and derive high-precision pose estimates from GNSS real-time kinematic (GNSS-RTK) and an INS navigation system. This semantic data aids in the extraction of vector information, such as lane markings, which forms the HDVM.
+The pipeline begins by extracting semantic information from raw images using advanced deep learning models like Vision Transformer (ViT) and Swin Transformer. Absolute 3D object data is then obtained from 3D LiDAR depth, while precise pose estimation is derived using GNSS-RTK and an INS-based navigation system. This semantic data is further processed to extract vector elements such as lane markings, forming the HDVM.
 
-A significant feature of this repo is its focus on HDVM accuracy. We've examined the impact of two primary error sources: segmentation discrepancies and LiDAR-camera extrinsic parameter deviations. An error propagation scheme is provided to showcase how these sources can affect the HDVM's precision.
+A key aspect of this work is ensuring HDVM accuracy. We analyze two major sources of error—segmentation inconsistencies and LiDAR-camera extrinsic calibration deviations. To illustrate their impact on HDVM precision, an error propagation framework is included in the analysis.
 
 ![Alt Text](https://github.com/DhirajRouniyar/HD-Vector-Map/blob/main/images/pipeline.png)
