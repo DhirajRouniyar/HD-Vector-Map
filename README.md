@@ -7,4 +7,4 @@ The process starts with the extraction of semantic data from raw images using ad
 
 A significant feature of this repo is its focus on HDVM accuracy. We've examined the impact of two primary error sources: segmentation discrepancies and LiDAR-camera extrinsic parameter deviations. An error propagation scheme is provided to showcase how these sources can affect the HDVM's precision.
 
-![Alt Text](https://your-image-url.com/image.png)
+![Alt Text]([https://your-image-url.com/image.png](https://github.com/DhirajRouniyar/HD-Vector-Map/blob/main/images/pipeline.png))
